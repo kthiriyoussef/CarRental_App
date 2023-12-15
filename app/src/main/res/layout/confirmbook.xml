@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cancel_bu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/BrandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ModelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model:"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/PriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/PickupDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Date: "
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ReturnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Date:"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:text="Book" />
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Return" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

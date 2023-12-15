@@ -1,0 +1,74 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/brandnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Brand Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/modelnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brandnametext"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Model Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modelnametext"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/img1"
+            android:backgroundTint="@color/blue"
+            android:text="Reserve"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
